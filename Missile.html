@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Missile Alert</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Missile Alerts</h1>
+
+<!-- Button to send real missile alert -->
+<a id="real-alert" href="#" >Send Missile Alert</a>
+
+<!-- Button to send test missile alert -->
+<a id="test-only" href="#">Send Test Missile Alert</a>
+
+<script>
+    // Selecting the real alert button
+    let realAlert = document.querySelector("#real-alert");
+
+    // Adding an event listener to the real alert button
+    realAlert.addEventListener('click', function(){
+        // Asking for confirmation before sending the real alert
+        let sendAlert = confirm('Send REAL alert, are you SURE!?!?!');
+        if (sendAlert) {
+            // If confirmed, display an alert indicating that the missile alert is sent
+            alert('Missile Alert Sent!');
+            // TODO: actually send the real alert
+        } else {
+            // If not confirmed, display an alert indicating that no alert is sent
+            alert('No alert sent.');
+            // do nothing.
+        }
+    });
+</script>
+</body>
+</html>

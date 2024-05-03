@@ -1,0 +1,33 @@
+/* Style for the h1 heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the anchor tags */
+a {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Style for the anchor tags when hovered */
+a:hover {
+    background-color: #0056b3; /* Darker shade of blue */
+}
+
+/* Style for the anchor tags with id real-alert */
+#real-alert {
+    background-color: #dc3545; /* Red color */
+}
+
+/* Style for the anchor tags with id real-alert when hovered */
+#real-alert:hover {
+    background-color: #c82333; /* Darker shade of red */
+}
